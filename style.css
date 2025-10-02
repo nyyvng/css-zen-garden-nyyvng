@@ -8,15 +8,14 @@ body {
     
 }
 a {
-    color:rgb(120, 106, 54);
+    color:rgba(97, 79, 12, 0.693);
     text-decoration: None;
-    
 }
 a:hover {
     font-size: 14px;
 }
 a:active {
-    color: rgb(167, 152, 40);
+    color: rgba(171, 154, 26, 0.419);
 }
 a:visited {
     color: rgb(167, 152, 40);
@@ -60,13 +59,33 @@ div.summary {
     width: 900px; 
     border: 2px dashed #000000;
     margin: 20px;
+    background-color: rgb(199, 183, 161);
 }
 div.preamble {
-    /* border: 2px solid black; */
     width: 300px;
     margin: 20px;
     padding: 2px;
 }
+div.preamble::after {
+    content: ""; background-color: rgb(199, 183, 161);
+    width: 590px;
+    height: 600px;
+    position: absolute;
+    bottom: 9px;
+    margin: 10px;
+    margin-left: 310px;
+    border: 2px dashed;
+}
+div.preamble::before {
+    content: ""; background-color: rgb(199, 183, 161);
+    width: 300px;
+    height: 900px;
+    position: absolute;
+    margin-top: 710px;
+    border: 2px dashed;
+}
+
+
 p::first-letter {
     font-size: xx-large;
 }
@@ -76,7 +95,6 @@ p::first-letter {
 
 }
 div.explanation {
-    /* border: 2px solid black; */
     margin-left: 350px;
     width: 575px;
     text-align: left;
@@ -85,8 +103,12 @@ div.explanation {
     font-size: large;
     text-align: left;
 }
+
+
+/* insert ::after/before here */
+
+
 div.participation {
-    /* border: 2px solid black; */
     font-size: large;
     width: 575px;
     margin-left: 350px;
