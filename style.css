@@ -1,1 +1,113 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
+body {
+    background-image: url(nwspaper.png);
+    /* border: 2px groove black */
+    background-size:contain;
+    
+    
+    
+}
+a {
+    color:rgb(120, 106, 54);
+    text-decoration: None;
+    
+}
+a:hover {
+    font-size: 14px;
+}
+a:active {
+    color: rgb(167, 152, 40);
+}
+a:visited {
+    color: rgb(167, 152, 40);
+}
+p {
+    font-family: "andale mono", monospace;
+
+}
+.page-wrapper {
+    width: 950px;
+    background-image: url(vintage.png);
+    margin: 0 auto;
+    opacity: 95%;
+    border: 3px solid black;
+    background-size: cover;
+}
+h1 {
+    text-align: center;
+    font-size: larger;
+    font-family:  Impact, "fantasy";
+
+}
+h2 {
+    text-align: center;
+    font-size: xxx-large;
+    
+    font-family: Impact, "fantasy";
+    border-width: 2px 0 2px;
+    
+    border-color: black;
+    border-style: solid;
+    padding:2px;
+}  
+h3 {
+    font-size: x-large;
+    font-family: Impact, "fantasy";
+}
+div.summary {
+    text-align: start;
+    font-size: small;
+    width: 900px; 
+    border: 2px dashed #000000;
+    margin: 20px;
+}
+div.preamble {
+    /* border: 2px solid black; */
+    width: 300px;
+    margin: 20px;
+    padding: 2px;
+}
+p::first-letter {
+    font-size: xx-large;
+}
+#zen-preamble {
+    font-size: large;
+    text-align: left;
+
+}
+div.explanation {
+    /* border: 2px solid black; */
+    margin-left: 350px;
+    width: 575px;
+    text-align: left;
+}
+#zen-explanation {
+    font-size: large;
+    text-align: left;
+}
+div.participation {
+    /* border: 2px solid black; */
+    font-size: large;
+    width: 575px;
+    margin-left: 350px;
+    margin-top: 20px;
+}
+div.benefits {
+    font-size: large;
+    width: 905px;
+    margin: 20px
+}
+div.requirements {
+    font-size: large;
+    width: 575px;
+    margin-left: 20px;
+
+}
+div.wrapper {
+    border: 2px dashed black;
+    margin: 20px;
+    
+}
+div.design-archives {
+   
+}
