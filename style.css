@@ -7,6 +7,9 @@ body {
     
     
 }
+* {
+    box-sizing: border-box;
+}
 a:link {
     color:rgba(97, 79, 12, 0.693);
     text-decoration: None;
@@ -24,6 +27,26 @@ p {
     font-family: "andale mono", monospace;
 
 }
+div, p {
+    margin-bottom: 10px;
+}
+div p {
+    color: rgb(72, 60, 34)
+}
+div > p {
+    border-left: 3px solid rgb(72, 60, 34);
+    padding-left: 5px
+}
+div + p {
+    background-color: None;
+}
+p ~ ul {
+    border: 41px dashed;
+}
+[title~="blank"] {
+    background-color: None;
+}
+
 .page-wrapper {
     width: 950px;
     background-image: url(vintage.png);
@@ -72,7 +95,7 @@ div.preamble::after {
     height: 600px;
     position: absolute;
     bottom: 9px;
-    margin: 10px;
+    top: 370px;
     margin-left: 310px;
     border: 2px dashed;
 }
@@ -115,9 +138,8 @@ div.participation {
     margin-top: 20px;
 }
 div.participation::after {
-    content: ""; background-color: rgb(199, 183, 161); background-image: url(man-reading-newspaper-clipart-lg.png);
+    content: ""; background-color: rgb(199, 183, 161);
     background-size: contain;
-    background-repeat: no-repeat;
     background-position: center;
     width: 300px;
     height: 800px;
@@ -148,12 +170,11 @@ footer {
 }
 div.wrapper::before {
     content: ""; background-image: url(man-reading-newspaper-clipart-lg.png);
-    background-color: rgb(185, 170, 148);
+    background-repeat: no-repeat ;
     background-size: 300px;
     width: 300px;
     height: 276px;
     position: absolute;
     margin-left: 550px;
     margin-top: 200px;
-    border: 2px dashed black
 }
