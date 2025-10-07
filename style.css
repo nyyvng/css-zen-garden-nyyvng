@@ -46,7 +46,9 @@ p ~ ul {
 [title~="blank"] {
     background-color: None;
 }
-
+[title~=""] {
+ /* code */
+}
 .page-wrapper {
     width: 950px;
     background-image: url(vintage.png);
@@ -92,7 +94,7 @@ div.preamble {
 div.preamble::after {
     content: ""; background-color: rgb(199, 183, 161);
     width: 590px;
-    height: 600px;
+    height: 580px;
     position: absolute;
     bottom: 9px;
     top: 370px;
