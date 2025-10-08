@@ -40,14 +40,54 @@ div > p {
 div + p {
     background-color: None;
 }
+div.summary p{
+    font-style: italic;
+}
+div.preamble > p {
+    background-color:rgb(199, 183, 161);
+    padding: 5px;
+}
+div.explanation > p {
+    background-color: rgb(199, 183, 161);
+    padding: 5px;
+}
+div.participation > p{
+    background-color: rgb(199, 183, 161);
+    padding: 5px
+}
+div.benefits > p {
+    background-color: rgb(199, 183, 161);
+    padding: 5px;
+}
+div.requirements > p {
+    background-color: rgb(199, 183, 161);
+    padding: 5px;
+}
 p ~ ul {
     border: 41px dashed;
 }
-[title~="blank"] {
+[title~="intro"] {
     background-color: None;
 }
-[title~=""] {
- /* code */
+a[href^="https"] {
+    font-weight: bold;
+}
+a[href$=".pdf"] {
+    font-style: italic;
+    color: black;
+}
+a[href*="archive"] {
+    background-color: black;
+}
+[lang|="."] {
+    font-style: italic;
+}
+aside.empty {
+    background: black;
+}
+div.article p:first-child {
+    font-weight: bold;
+    font-size: larger;
 }
 .page-wrapper {
     width: 950px;
@@ -60,14 +100,11 @@ p ~ ul {
 h1 {
     text-align: center;
     font-size: larger;
-    font-family:  Impact, "fantasy";
-
 }
 h2 {
     text-align: center;
     font-size: xxx-large;
     
-    font-family: Impact, "fantasy";
     border-width: 2px 0 2px;
     
     border-color: black;
@@ -76,7 +113,6 @@ h2 {
 }  
 h3 {
     font-size: x-large;
-    font-family: Impact, "fantasy";
 }
 div.summary {
     text-align: start;
@@ -94,22 +130,21 @@ div.preamble {
 div.preamble::after {
     content: ""; background-color: rgb(199, 183, 161);
     width: 590px;
-    height: 580px;
+    height: 590px;
     position: absolute;
     bottom: 9px;
-    top: 370px;
+    top: 400px;
     margin-left: 310px;
     border: 2px dashed;
 }
 div.preamble::before {
     content: ""; background-color: rgb(199, 183, 161);
     width: 300px;
-    height: 900px;
+    height: 940px;
     position: absolute;
-    margin-top: 710px;
+    margin-top: 730px;
     border: 2px dashed;
 }
-
 
 p::first-letter {
     font-size: xx-large;
@@ -128,11 +163,6 @@ div.explanation {
     font-size: large;
     text-align: left;
 }
-
-
-/* insert ::after/before here */
-
-
 div.participation {
     font-size: large;
     width: 575px;
@@ -144,10 +174,10 @@ div.participation::after {
     background-size: contain;
     background-position: center;
     width: 300px;
-    height: 800px;
+    height: 830px;
     position: absolute;
     margin-left: 275px;
-    margin-top: 240px;
+    margin-top: 260px;
     border: 2px dashed black;
 }
 div.benefits {
@@ -179,4 +209,46 @@ div.wrapper::before {
     position: absolute;
     margin-left: 550px;
     margin-top: 200px;
+}
+.article p::first-line {
+    font-variant: small-caps;
+}
+::selection {
+    background: none;
+}
+.article p:first-of-type {
+    color: black;
+}
+.article p:last-of-type {
+    color: black;
+}
+.article p:only-child {
+    background-color: #000000;
+}
+.article p:only-of-type {
+    border: 2px dashed black;
+}
+input:focus {
+    outline: 2px solid black;
+}
+*:not(p) {
+    font-family: "andale mono", monospace;
+}
+.article p:nth-child(2) {
+    background-color: #000000;
+}
+.article p:nth-last-child(2) {
+    border-top: 1px dashed black;
+}
+.article p:nth-of-type(2) {
+    font-weight: bold;
+}
+.article p:nth-last-of-type(2) {
+    font-style: italic;
+} 
+:root {
+    color: rgb(72, 60, 34);
+}
+a[target] {
+    background-color: None;
 }
